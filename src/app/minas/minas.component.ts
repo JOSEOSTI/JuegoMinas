@@ -15,12 +15,11 @@ export class MinasComponent implements OnInit {
   ngOnInit( ) {
 
 this.MostrarConfiguracion();
-
-  }
+}
 
 // Variables
 title = 'BuscaminasAngular';
-namePlayer = "Sin nombre";
+namePlayer = " ";
 scorePlayer = "0";
 timePlayer = "00:00";
 dificultadPlayer = 0;

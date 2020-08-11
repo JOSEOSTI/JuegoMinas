@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { MinasComponent } from './minas/minas.component';
+import { JuegoComponent } from './juego/juego.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    MinasComponent
+    MinasComponent,
+    JuegoComponent
   ],
   imports: [
     BrowserModule,

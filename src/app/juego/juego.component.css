@@ -1,0 +1,90 @@
+.contenido {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.botonera {
+	background-color: rgb(200, 200, 200);
+	width: 90%;
+	bottom: 0;
+	position: fixed;
+	text-align: center;
+	border-top: 2px solid white;
+}
+
+.flux {
+	font-family: neon;
+	color: #15255c;
+	font-size: 9vw;
+	line-height: 9vw;
+	text-shadow: 0 0 3vw #2356FF;
+  }
+  
+  .neon {
+	animation: neon 1s ease infinite;
+	-moz-animation: neon 1s ease infinite;
+	-webkit-animation: neon 1s ease infinite;
+  }
+
+/* Button Llamativo */
+
+.btnInicio::before, .btnInicio::after {
+	position: absolute;
+	content: '';
+	transition: all 0.5s;
+}
+
+.btnInicio {
+	display: inline-block;
+	padding: 20px 40px;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	vertical-align: middle;
+	font-size: 4em;
+	transition: all 0.5s;
+	background-color: #426DFB;
+}
+
+.btnInicio::before {
+	bottom: -15px;
+	height: 15px;
+	width: 50%;
+	left: 8px;
+	transform: skewX(45deg);
+	background-color: #1041FF;
+}
+
+.btnInicio::after {
+	right: -15px;
+	height: 50%;
+	width: 15px;
+	bottom: -8px;
+	transform: skewY(45deg);
+	background-color: rgb(13, 53, 212);
+}
+
+.btnInicio:active {
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+.btnInicio:active::before {
+	bottom: -5px;
+	height: 5px;
+	left: 3px;
+}
+
+.btnInicio:active::after {
+	right: -5px;
+	width: 5px;
+	bottom: -3px;
+}
+
+.btnInicio:hover {
+	cursor: pointer
+}
